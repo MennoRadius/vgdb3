@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Removes the need for .php at the end of the filename
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
